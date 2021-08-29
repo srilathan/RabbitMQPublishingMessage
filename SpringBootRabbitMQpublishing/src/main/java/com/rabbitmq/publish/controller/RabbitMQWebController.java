@@ -10,7 +10,7 @@ import com.rabbitmq.publish.model.Employee;
 import com.rabbitmq.publish.service.RabbitMQSender;
 
 @RestController
-@RequestMapping(value = "/javainuse-rabbitmq/")
+@RequestMapping(value = "/java-rabbitmq/")
 public class RabbitMQWebController {
 
 	@Autowired
@@ -24,7 +24,7 @@ public class RabbitMQWebController {
 	emp.setEmpName(empName);
 		rabbitMQSender.send(emp);
 
-		return "Message sent to the RabbitMQ JavaInUse Successfully";
+		return "Message sent to the RabbitMQ test Successfully";
 	}
 
 }
